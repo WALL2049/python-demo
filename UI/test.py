@@ -1,12 +1,12 @@
 import PySimpleGUI as sg
 
 layout= [
-[sg.B('中文'), sg.B('English')],
+[sg.B('中文', size=(8,1)), sg.B('English', size=(8,1))],
 [sg.T('请输入您的基本信息', key='--BEGIN--')],
 [sg.T('姓名', key='--NAME--', size=(8,1)), sg.In('例如：李明')],
 [sg.T('性别', key='--GENDER--', size=(8,1)), sg.In('')],
 [sg.T('年龄', key='--AGE--', size=(8,1)), sg.In('')],
-[sg.B('确定', key='--CONFIRM--', size=(8,1)),sg.B('取消', key='--CANCEL--')]
+[sg.B('确定', key='--CONFIRM--', size=(8,1)),sg.B('取消', key='--CANCEL--', size=(8,1))]
 
          ]
 
