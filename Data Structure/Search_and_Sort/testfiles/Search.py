@@ -4,16 +4,17 @@ class Search:
 
     @staticmethod
     def search_list(alist, item):
-        index = 0
-        while index <= len(alist):
-            for i in range(len(alist)):
-                if alist[i] != item:
-                    continue
-                else:
-                    return i
+        for index in range(len(alist)):
+            if alist[index] != item:
+                continue
+            else:
+                return index
 
 
 if __name__ == "__main__":
     alist = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
     result = Search.search_list(alist, 7)
     print(result)
+
+
+
