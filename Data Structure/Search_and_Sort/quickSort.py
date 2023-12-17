@@ -3,8 +3,6 @@
 import time
 
 
-
-
 def quickSortList(alist):
     if len(alist) >= 2:
         base = alist[0]
@@ -68,7 +66,7 @@ def partition(alist, first, last):
 
 if __name__ == '__main__':
     start = time.time()
-    alist = [4, 84, 3, 7, 73, 10, 46, 4, 29, 73]
+    alist = [4, 84, 3, 7, 38, 19, 12, 97, 88, 53, 42, 73, 10, 46, 4, 29, 73]
     print(quickSortList(alist))
     end = time.time()
     print(end - start)

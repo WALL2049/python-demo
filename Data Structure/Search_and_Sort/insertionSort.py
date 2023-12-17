@@ -9,7 +9,7 @@ def insertionSort(alist):
         position = index
 
         while position > 0 and alist[position - 1] > currentvalue:
-            alist[position] = alist[position -1]              # 插入排序，交换1次，相比冒泡交换3次更优
+            alist[position] = alist[position -1]            # 插入排序，交换1次，相比冒泡交换3次更优
             position -= 1
         alist[position] = currentvalue
 

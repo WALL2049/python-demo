@@ -1,3 +1,5 @@
+utf-8
+
 class TupleDemo1:
     def __init__(self):
         pass

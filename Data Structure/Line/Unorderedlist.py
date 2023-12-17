@@ -42,7 +42,6 @@ class Unorderedlist:
     def index(self, item):
         count = 0
         current = self.head
-        found = False
 
         while current.getData() != item:
             if current.getData() == None:
@@ -65,22 +64,20 @@ class Unorderedlist:
 
         return found
 
-
     def remove(self, item):
         current = self.head
         previous = None
-        found = False
+        # found = False
         # while not found:
         #     if current.getData() == item:
         #         found = True
         #         if previous == None:
         #             self.head = current.getNext()
         #         else:
-        #             previous.setNext(current.get())        #这样写的话似乎不对，previous还没实例化，没法用这个方法，所以可以提出去
+        #             previous.setNext(current.get())   #这样写的话似乎不对，previous还没实例化，没法用这个方法，所以可以提出去
         #     else:
         #         previous = current
         #         current = current.getNext()
-
 
         while current.getData() != item:
             previous = current
@@ -96,12 +93,9 @@ class Unorderedlist:
         # else:
         #     previous.setNext(current.getNext())
 
-
-
     def append(self, item):
         temp = Node(item)
         current = self.head
-        found = False
 
         if self.head == None:
             self.head = temp
@@ -125,7 +119,7 @@ class Unorderedlist:
             previous.setNext(temp)
             temp.setNext(current)
 
-    def pop(self, pos = 0):
+    def pop(self, pos=0):
         count = 0
         current = self.head
         previous = None
@@ -142,11 +136,8 @@ class Unorderedlist:
     def printlist(self):
         current = self.head
         while current != None:
-            print(current.getData())
+            print(f"{current.getData()},", end="\t")
             current = current.getNext()
-
-
-
 
 
 if __name__ == '__main__':
@@ -158,27 +149,28 @@ if __name__ == '__main__':
     mylist.add(26)
     mylist.add(54)
 
-    # print(mylist.size())
-    # print(mylist.search(93))
-    # print(mylist.index(93))
-    # print(mylist.search(100))
-    #
-    # mylist.add(100)
-    # print(mylist.search(100))
-    # print(mylist.size())
-    #
-    # mylist.remove(54)
-    # print(mylist.size())
-    # mylist.remove(93)
-    # print(mylist.size())
-    # mylist.remove(31)
-    # print(mylist.size())
-    # print(mylist.search(93))
-    #
-    # mylist.append(88)
-    # print(mylist.size())
-    # mylist.add(66)
-    # print(mylist.size())
-    # mylist.pop(0)
-    # print(mylist.search(66))
-    # print(mylist.size())
+    print(mylist.size())
+    print(mylist.search(93))
+    print(mylist.index(93))
+    print(mylist.search(100))
+
+    mylist.add(100)
+    print(mylist.search(100))
+    print(mylist.size())
+
+    mylist.remove(54)
+    print(mylist.size())
+    mylist.remove(93)
+    print(mylist.size())
+    mylist.remove(31)
+    print(mylist.size())
+    print(mylist.search(93))
+
+    mylist.append(88)
+    print(mylist.size())
+    mylist.add(66)
+    print(mylist.size())
+    mylist.pop(0)
+    print(mylist.search(66))
+    print(mylist.size())
+    mylist.printlist()

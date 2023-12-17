@@ -15,4 +15,4 @@ def getMC(coinsValueList, change):      #coin列表，change次数也即minCoins
 if __name__ == '__main__':
     print(time.perf_counter())
     print(getMC([1,5,10,21,25], 63))
-    print(time.perf_counter())                #花费30秒，迭代太多太慢了
+    print(time.perf_counter())                #花费30秒，迭代太多太慢了，新电脑花了9s（联想小新16pro)

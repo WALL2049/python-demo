@@ -1,4 +1,4 @@
-from class_Deque import Deque
+from Deque import Deque
 
 def hotPotato(namelist, num):
     hotDeque = Deque()

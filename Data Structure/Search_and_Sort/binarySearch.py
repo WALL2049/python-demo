@@ -1,6 +1,7 @@
 # coding = utf-8
 import time
 
+
 def binaryListSearch(list, item):
     found = False
     while not found:
