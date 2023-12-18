@@ -2,8 +2,9 @@
 
 import time
 
+
 def bubbleSort(alist):
-    for passnum in range(len(alist)-1, 0, -1):
+    for passnum in range(len(alist) - 1, 0, -1):
         for i in range(passnum):
             if alist[i] > alist[i + 1]:
                 temp = alist[i]
@@ -42,14 +43,15 @@ def shortBubbleSort(alist):
         passnum -= 1
     return alist
 
+
 if __name__ == '__main__':
     start = time.time()
-    alist = [55,256,84,3,7,4,86,9,43,788,4,425,667,34,73]
+    alist = [55, 256, 84, 3, 7, 4, 86, 9, 43, 788, 4, 425, 667, 34, 73]
     print(bubbleSort(alist))
     end = time.time()
     print(end - start)
 
-    a = [None]*5
+    a = [None] * 5
     print(a)
     print(type(a))
     print(a == None)

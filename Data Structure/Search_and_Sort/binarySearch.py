@@ -1,71 +1,73 @@
-# coding = utf-8
+# coding=utf-8
 import time
 
 
-def binaryListSearch(list, item):
-    found = False
-    while not found:
-        pos = len(list) // 2
-        if list[pos] > item:
-            list = list[0:pos-1]
-        elif list[pos] < item:
-            list = list[pos+1:len(list)]
-        elif list[pos] == item:
-            found = True
 
-    return found
+class BinarySearch:
+    def __init__(self):
+        pass
 
-def binaryIndexSearch(list, item):
-    found = False
-    first = 0
-    last = len(list) - 1
-    while not found:
-        midpoint = (first + last) // 2
-        if list[midpoint] == item:
-            found = True
-        if list[midpoint] < item:
-            first = midpoint + 1
-        if list[midpoint] > item:
-            last = midpoint - 1
+    @staticmethod
+    def binary_search(alist, item):
+        while True:
+            if len(alist) == 0:
+                return False
+            index = len(alist) // 2
+            if alist[index] > item:
+                alist = alist[:index]
+            elif alist[index] < item:
+                alist = alist[index + 1:]
+            elif alist[index] == item:
+                return True
 
-    return found
-
-def binaryIndexRecursionSearch(list, item):
-    first = 0
-    last = len(list) - 1
-    if len(list) == 0:
-        return False
-    else:
-        midpoint = (first + last) // 2
-        if list[midpoint] == item:
+    @staticmethod
+    def binary_search_recursion(alist, item):
+        if len(alist) == 0:
+            return False
+        index = len(alist) // 2
+        if alist[index] > item:
+            return BinarySearch.binary_search_recursion(alist[:index], item)
+        if alist[index] < item:
+            return BinarySearch.binary_search_recursion(alist[index + 1:], item)
+        if alist[index] == item:
             return True
-        elif list[midpoint] < item:
-            return binaryIndexRecursionSearch(list[midpoint + 1:], item)
-        elif list[midpoint] > item:
-            return binaryIndexRecursionSearch(list[:midpoint - 1], item)
 
-    return found
+# 下面这种方式，值如果比较大，计算时间过长
+    @staticmethod
+    def binaryIndexSearch(list, item):
+        found = False
+        first = 0
+        last = len(list) - 1
+        while not found:
+            midpoint = (first + last) // 2
+            if list[midpoint] == item:
+                found = True
+            if list[midpoint] < item:
+                first = midpoint + 1
+            if list[midpoint] > item:
+                last = midpoint - 1
 
+        return found
 
 
 if __name__ == "__main__":
     start = time.time()
     list = [i for i in range(10000000)]
-    result = binaryListSearch(list, 5 ^ 8)
+    result = BinarySearch.binary_search(list, 5**8)
     end = time.time()
     print(result)
     print(end - start)
 
     start = time.time()
     list = [i for i in range(10000000)]
-    result = binaryIndexSearch(list, 5 ^ 8)
+    result = BinarySearch.binaryIndexSearch(list, 5**8)
     end = time.time()
     print(result)
     print(end - start)
 
     start = time.time()
     list = [i for i in range(10000000)]
-    result = binaryIndexRecursionSearch(list, 5 ^ 8)
+    result = BinarySearch.binary_search_recursion(list, 5**8)
     end = time.time()
     print(result)
     print(end - start)
