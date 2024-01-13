@@ -25,6 +25,7 @@
 # 	sys.exit("sorry, goodbye!")
 # except SystemExit:
 # 	exitfunc(SystemExit)                  #有异常，捕获并返回异常，结束程序
+import sys
 
 item = "sorry, goodbye!"
 item = "123"

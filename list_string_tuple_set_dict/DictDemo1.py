@@ -1,3 +1,5 @@
+# coding=utf-8
+
 class DictDemo1:
     def __init__(self):
         pass
@@ -23,6 +25,7 @@ if __name__ == "__main__":
     dict1["weight"] = "115"
     print(dict1)
     print(dict1.get("weight"))
+    print(dict1["weight"])
 
     print(list(dict1.keys()))
     for key in dict1.keys():
@@ -32,4 +35,4 @@ if __name__ == "__main__":
         print(value, end="")
     print("\n=========\t========")
     for key, value in dict1.items():
-        print(f"{key}µÄÖµÊÇ{value}")
+        print(f"{key}çš„å€¼æ˜¯{value}")

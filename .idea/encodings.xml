@@ -2,18 +2,20 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Data Structure/Search_and_Sort/1234567.py" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/auto_test/RCT_Tool/123.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auto_test/RCT_Tool/345.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auto_test/RCT_Tool/456.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auto_test/RCT_Tool/test3.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auto_test/RCT_Tool/test4.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auto_test/UI/pysimpleGUI_test.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auto_test/UI/showmenu.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auto_test/UI/test3.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auto_test/UI/test_RCT.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auto_test/interface_auto/__init__.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auto_test/interface_auto/lib_test.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auto_test/interface_auto/test3_requests_Session.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/interface_auto/requests_test/lib_test.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/interface_auto/requests_test/lib_test.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/interface_auto/requests_test/test3_requests_Session.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/interface_auto/requests_test/test3_requests_Session.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/rct_tool_ui_auto/123.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/rct_tool_ui_auto/345.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/rct_tool_ui_auto/456.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/rct_tool_ui_auto/test3.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_test/rct_tool_ui_auto/test4.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_structure/Search_and_Sort/insertionSort.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/student _system/student.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/test_practice/system/test1.py" charset="UTF-8" />

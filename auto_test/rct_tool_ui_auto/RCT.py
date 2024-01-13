@@ -6,7 +6,7 @@ import re
 from future.backports.test.ssl_servers import threading
 import os
 import PySimpleGUI27 as sg
-from auto_test.RCT_Tool import sys
+from auto_test.rct_tool_ui_auto import sys
 import paramiko
 import time
 from selenium import webdriver # 导入webdrive这个类
